@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var textElement = document.getElementById("dynamic-text");
+          var texts = ["WELCOME", "TO", "BOOK_HAVEN"];
+          var index = 0;
+    
+          function changeText() {
+            textElement.textContent = texts[index];
+            index = (index + 1) % texts.length;
+            setTimeout(changeText, 2000); 
+          }
+        changeText();
+        });
+    </script>
+   
+</head>
+<body>
+   
+    <div class="loader-container">
+        <img src="photos and videos\books.gif" alt="">
+    </div>
+    <div class="container">
+        <a style="align-items: center;display: flex; justify-content: center; "href="index.html" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1E3F2NMYt2aNp9z300F6MLV_p4LuJb4gKZg&usqp=CAU" alt="" height="35px"></a>
+        <div id="dynamic-text"><h1>WELCOME</h1></div>
+        <br>
+        <br>
+        <a href="login.html" class="btn" >Sign in</a>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="index.js"></script>
+        <div id="cart-icon">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWX3MGbr3TnrQNTGCHKkA4VRRNR1hx9OuWgBNe9LLOUBjVuQ_2tKdEdacZWRr8HUQYg7s&usqp=CAU" alt="Cart Icon" id="cart-icon-image" />
+           <span id="cart-item-count">0</span>
+        </div>
+        <div id="cart">
+        <h2>Cart</h2>
+        </div>
+        <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search books..." autocomplete="off">
+        <div class="suggestions" id="suggestions"></div>
+        </div>
+        
+        <div class="pagination">
+            <!-- <button id="prevButton" disabled>Previous</button> -->
+            <!-- <button id="nextButton" disabled>Next</button> -->
+        </div>
+    <ul class="results" id="results"></ul></a>
+    <h1 class="custom-heading ">FICTION</h1>
+    <ul id="books"></ul>
+    <h1 class="custom-heading ">EDUCATION</h1>
+    <ul id="book"></ul>
+    <h1 class="custom-heading ">NARRATIVE</h1>
+    <ul id="bookbook"></ul>
+    <h1 class="custom-heading ">NOVELS</h1>
+    <ul id="bookbooks"></ul>
+    <h1 class="custom-heading ">FANTASY</h1>
+    <ul id="bookbookss"></ul>
+    <h1 class="custom-heading ">HISTORY</h1>
+    <ul id="bookbooksss"></ul>
+   </div>
+   <br>
+   <footer class="footer">
+    <div class="column">
+      <h4>DevRev</h4>
+      <p>&copy; 2023</p>
+      <p>Telangana  Hyderabad </p>
+    </div>
+    <div class="column">
+      <h4>About Us</h4>
+      <p>Contact Us</p>
+    </div>
+    <div class="column">
+      <h4>Support</h4>
+      <p>Privacy Policy</p>
+      <p>Sitemap</p>
+    </div>
+    <div class="column">
+      <h4>Follow Us</h4>
+      <p>
+        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFXJ0gCMFb_gpo7B9Qe8l5y8hWRA865eiDPx3mN9oICG1o-MrwDobYjZ8da7w5HJV2p2M&usqp=CAU" alt="Facebook"></a>
+        <a href="#"><img src="data:image/png;base64,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" alt="Google"></a>
+        <a href="#"><img src="data:image/png;base64,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" alt="Twitter"></a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

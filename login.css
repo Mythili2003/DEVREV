@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://images.indianexpress.com/2021/06/Untitled-design-4-1.png); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+  
+  .form-container {
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(249, 243, 243, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f1eaea;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form input:focus {
+    outline: none;
+    border-color: #ca433c;
+    box-shadow: 0 0 5px rgb(11, 11, 11);
+  }
+  
+  form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ee1111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0909e7;
+  }
+  .signupButton p,a{
+    color: rgb(9, 33, 252);
+  }
+  
+  .social-media-login {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media-button ,.fab fa-facebook-f{
+    margin: 0 40px;
+    padding: 10px 15px;
+    background-color: #cf2819;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-position 0.3s linear;
+    background-position: 0% 0%;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 50% ,#4110e2  50%);
+    /* transition: background-color 0.3s ease; */
+  }
+  
+  /* .social-media-button:hover {
+    background-color: #2a4374;
+  } */
+  .fab fa-facebook-f,.social-media-button:hover{
+    background-position: 100% 0%;
+    border-color:blue;
+  }
+ .btn{
+    margin: 0 40px;
+    padding: 10px 15px;
+    background-color: #cf2819;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-position 0.3s linear;
+    background-position: 0% 0%;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 50% ,#cf2819  50%);
+  }
+  .btn:hover{
+    background-position: 100% 0%;
+    border-color:blue;
+  }
